@@ -3,17 +3,20 @@ import { useParams } from 'react-router'
 import ItemDetail from './ItemDetail'
 
 function ItemDetailContainer() {
-    const [item, setItem] = useState()
+    const [item, setItem] = useState(null)
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`https://dummyjson.com/products/category/${id}`)
+        fetch(`https://dummyjson.com/products/${id}`)
             .then(res => res.json())
-            .then(res => setItem(res))
+            .then(data => setItem(data))
+            .catch(error => console.error('Error fetching item:', error));
     }, [id])
 
     return (
-        <ItemDetail item={item} />
+        <div>
+            {item ? <ItemDetail item={item} /> : <p>Loading...</p>}
+        </div>
     )
 }
 
