@@ -1,4 +1,4 @@
-import './styles/ItemDetail.css';
+import './styles/ItemDetail.css'
 
 function ItemDetail({ item }) {
     return (

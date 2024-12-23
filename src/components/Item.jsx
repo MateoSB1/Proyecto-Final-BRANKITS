@@ -1,5 +1,5 @@
-import { Link } from 'react-router';
-import './styles/Item.css';
+import { Link } from 'react-router'
+import './styles/Item.css'
 
 function Item({ item }) {
     return (
@@ -17,7 +17,7 @@ function Item({ item }) {
                 </div>
             </div>
         </main>
-    );
+    )
 }
 
-export default Item;
+export default Item

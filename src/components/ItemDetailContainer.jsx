@@ -10,7 +10,7 @@ function ItemDetailContainer() {
         fetch(`https://dummyjson.com/products/${id}`)
             .then(res => res.json())
             .then(data => setItem(data))
-            .catch(error => console.error('Error fetching item:', error));
+            .catch(error => console.error('Error fetching item:', error))
     }, [id])
 
     return (

@@ -1,5 +1,5 @@
-import Item from './Item';
-import './styles/ItemList.css';
+import Item from './Item'
+import './styles/ItemList.css'
 
 function ItemList({ items }) {
     return (
@@ -8,7 +8,7 @@ function ItemList({ items }) {
                 {items.map(item => <Item item={item} key={item.id} />)}
             </div>
         </div>
-    );
+    )
 }
 
-export default ItemList;
+export default ItemList
