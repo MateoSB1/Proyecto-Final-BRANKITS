@@ -1,5 +1,4 @@
-import { StrictMode } from 'react'
-import './CartWidget.css'
+import './styles/CartWidget.css'
 import carrito from "../assets/images/carrito.png";
 
 function CartWidget() {

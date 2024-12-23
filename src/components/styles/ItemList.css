@@ -1,0 +1,30 @@
+/* ItemList.css */
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media (max-width: 1210px) {
+    .item-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 996px) {
+    .item-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 660px) {
+    .item-grid {
+        grid-template-columns: 1fr;
+    }
+}

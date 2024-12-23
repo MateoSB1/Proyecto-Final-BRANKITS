@@ -1,6 +1,6 @@
 /* Header styles */
 .header {
-    background-color: #0a3d62;
+    background-color: #4a3931;
     color: #fff;
     padding: 0 1rem;
     display: flex;
@@ -12,10 +12,11 @@
 .logo-title {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .header img {
-    height: 50px;
+    height: 4rem;
     object-fit: contain;
 }
 
@@ -23,28 +24,26 @@
     font-family: 'AkiraExpanded', sans-serif;
     font-size: 3rem;
     margin: 0.8rem;
+    color: #fff;
 }
 
 /* Navigation bar */
-.nav ul {
+.nav {
     display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    gap: 2rem;
 }
 
-.nav a {
+.nav-link {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transition: color 0.3s;
 }
 
-.nav a:hover {
-    color: #51adfd; /* Add hover effect */
+.nav-link:hover {
+    color: #bca98c;
 }
 
-.nav a:focus {
+.nav-link:focus {
     outline: 2px solid #fff;
 }
