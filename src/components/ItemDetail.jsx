@@ -1,18 +1,15 @@
 import './styles/ItemDetail.css'
+import ItemCount from './ItemCount'
 
 function ItemDetail({ item }) {
     return (
         <div className="container-itemDetal">
-            <img src={item.thumbnail} alt={item.title} />
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-                <p>Category: {item.category}</p>
-                <div className="price-itemDetal">{item.price}</div>
-                <div className="quantity-itemDetal">
-                    <label htmlFor={`quantity-${item.id}`}>Cantidad: </label>
-                    <input id={`quantity-${item.id}`} type="number" min="0" defaultValue="0" />
-                    <button className="btn-itemDetal">Agregar al carrito</button>
-                </div>
+            <img src={item.image} alt={item.title} />
+            <h2 className="h2-itemDetal">{item.title}</h2>
+            <p className="p-itemDetal">{item.description}</p>
+            <p className="p-itemDetal">Category: {item.category.toUpperCase()}</p>
+            <div className="price-itemDetal">${item.price}</div>
+            <ItemCount item={item} />
         </div>
     )
 }
