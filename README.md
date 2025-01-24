@@ -28,7 +28,7 @@ BRANKITS Store es un simulador de e-commerce desarrollado con React.js que permi
 ## Estructura del Proyecto
 
 ```plaintext
-Proyecto-Final-copia/proyecto-final-React/
+Proyecto-Final/proyecto-final-React/
 ├── node_modules/          # Dependencias instaladas
 ├── public/                # Archivos públicos
 ├── src/                   # Código fuente principal
@@ -78,7 +78,7 @@ Formulario para completar la compra y generar órdenes.
 **Repositorio del Proyecto**:
 
 ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   https://github.com/MateoSB1/Proyecto-Final-BRANKITS
 ```
 
 ---
