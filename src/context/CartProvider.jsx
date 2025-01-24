@@ -4,12 +4,20 @@ import { useState } from 'react'
 export default function CartProvider({ children }) {
     const [cart, setCart] = useState([])
 
-    const addToCart = item => {
-        const isInCart = cart.some(prod => prod.id === item.id)
+    const addToCart = (item) => {
+        setCart((prevCart) => {
+            const isInCart = prevCart.some((prod) => prod.id === item.id)
 
-        if (!isInCart) return setCart([...cart, item])
+            if (isInCart) {
+                return prevCart.map((prod) =>
+                    prod.id === item.id
+                        ? { ...prod, quantity: prod.quantity + item.quantity }
+                        : prod
+                )
+            }
 
-        alert('El producto ya esta en el carrito')
+            return [...prevCart, item]
+        })
     }
 
     const removeFromCart = (id) => {
