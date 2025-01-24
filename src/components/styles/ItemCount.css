@@ -1,30 +1,30 @@
 .quantity-ItemCount {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
 }
 
 .quantity-ItemCount .input-ItemCount {
-  width: 50px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .btn-ItemCount {
-  background-color: #0a3d62;
-  color: #FFF;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1rem;
-  font-style: bold;
+    background-color: #0a3d62;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: bold;
 }
 
 .btn-ItemCount:hover {
-  background-color: #a7d6ffe7;
+    background-color: #a7d6ffe7;
 }

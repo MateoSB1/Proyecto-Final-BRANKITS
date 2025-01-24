@@ -1,4 +1,4 @@
-/* Header styles */
+/* General Header Styles */
 .header {
     background-color: #0a3d62;
     color: #fff;
@@ -6,38 +6,51 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    height: 9vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo-title {
+/* Logo Styles */
+.logo {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-.header img {
-    height: 4rem;
+.logo-img {
+    height: 50px;
     object-fit: contain;
 }
 
-.header h1 {
+.logo-title {
     font-family: 'AkiraExpanded', sans-serif;
     font-size: 3rem;
-    margin: 0.8rem;
+    margin: 0.8rem 1.2rem;
     color: #fff;
 }
 
-/* Navigation bar */
+/* Navigation Links */
 .nav {
     display: flex;
+    align-items: center;
     gap: 2rem;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 6rem;
 }
 
 .nav-link {
     color: #fff;
     text-decoration: none;
+    margin: 0 1rem;
     font-size: 1.8rem;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -46,4 +59,66 @@
 
 .nav-link:focus {
     outline: 2px solid #fff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+}
+
+.hamburger .line {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 70%;
+    background-color: #0a3d62;
+    z-index: 10;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1405px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 1196px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .logo-title {
+        display: none;
+    }
 }

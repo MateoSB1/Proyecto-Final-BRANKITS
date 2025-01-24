@@ -9,7 +9,7 @@ function CartWidget() {
 
     return (
         <Link to='/cart' className="cart">
-            <img src={carrito} alt="Carrito de compras" />
+            <img className="cart-img" src={carrito} alt="Carrito de compras" />
             <div className="cart-count">{getQty()}</div>
         </Link>
     )
